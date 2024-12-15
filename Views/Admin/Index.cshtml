@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    var adminSession = Context.Session.GetString("Username");
+}
+
+<h2>Welcome, Admin @adminSession!</h2>
+<a href="/Auth/Logout">Logout</a>
